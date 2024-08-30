@@ -222,6 +222,7 @@ a{
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1.5rem;
     align-items: center;
     min-width: 445px;
@@ -259,6 +260,8 @@ a{
     font-weight: 500;
     margin-top: 1rem;
 
+    
+
     & span{
         margin: 8px;
     }
@@ -286,6 +289,24 @@ a{
         grid-column: 1/4;
     
     }
+}
+@media screen and (max-width:600px) {
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    main{
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    
+    }
+
+
+
+
 }
 
 #section-5{
@@ -352,6 +373,7 @@ a{
     .hero-section{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3,1fr);
+        overflow:hidden;
     }
     #section-4{
         grid-column: 1/4;
@@ -363,6 +385,7 @@ a{
             width: 300px;
             /* border: 1px solid; */
             transform: translate(0px,-100px);
+
             object-fit: contain;
             object-position: bottom;
         }
@@ -581,8 +604,10 @@ a{
     }
 
 }
+
 .page3-img img{
     max-width: 500px;
+    
 }
 
 
@@ -590,15 +615,22 @@ a{
     .page-3{
         flex-direction: column;
         height: auto;
-        overflow: hidden;
-        /* border: 1px solid black; */
+        
     }
     .page3-img img{
-        border: 1px solid;
 
-        min-width: 60vw;
+        overflow: hidden;
+
+        width: auto;
 
     }
+}
+
+@media screen and (max-width:600px){
+    .page-3 img{
+        width: 320px;
+    }
+
 }
 
 
@@ -652,6 +684,10 @@ a{
     .page-4{
         flex-direction: column;
     }
+
+        .page-4 img{
+            width: 300px;
+        }
 
 }
 
@@ -798,8 +834,3 @@ footer{
     font-size: large;
 
 }
-
-
-
-
-
